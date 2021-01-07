@@ -1,4 +1,4 @@
-package wsb.jsp;
+package wsb.jsp.utils;
 
 public class StringUtil {
 

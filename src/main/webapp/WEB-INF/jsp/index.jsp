@@ -1,6 +1,6 @@
 <%@ page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8" %>
 <%@ page import="java.util.Date" %>
-<%@ page import="wsb.jsp.StringUtil" %>
+<%@ page import="wsb.jsp.utils.StringUtil" %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
