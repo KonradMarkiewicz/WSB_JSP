@@ -11,6 +11,7 @@
 
 <form action="filteredCountries">
     <input type="number" name="minPopulation" value="${param.minPopulation}"/>
+    <%--<input type="number" name="minPopulation" value="<%= request.getParameter("minPopulation")%>"/>--%>
     <button type="submit">Szukaj</button>
 </form>
 

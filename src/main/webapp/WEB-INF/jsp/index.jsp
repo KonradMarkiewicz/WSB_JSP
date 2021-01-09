@@ -3,6 +3,7 @@
 <%@ page import="wsb.jsp.utils.StringUtil" %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
 
 <html>
 <head>
@@ -84,6 +85,20 @@
     </c:forEach>
 </section>
 
+<section>
+    <h3>Formatowanie</h3>
+
+    <c:set var="now" value="<%=new Date()%>"/>
+    <div>
+        <fmt:formatDate value="${now}" type="date"/>
+    </div>
+    <div>
+        <fmt:formatDate value="${now}" type="time"/>
+    </div>
+    <div>
+        <fmt:formatDate value="${now}" pattern="dd.MM.yyyy HH:mm"/>
+    </div>
+</section>
 
 </body>
 </html>

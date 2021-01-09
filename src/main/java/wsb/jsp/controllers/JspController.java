@@ -1,6 +1,7 @@
 package wsb.jsp.controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -29,6 +30,12 @@ public class JspController {
         ModelAndView modelAndView = new ModelAndView("countries/index");
         modelAndView.addObject("countries", countryRepository.findAll());
         return modelAndView;
+    }
+
+    @RequestMapping("/countriesModel")
+    public String countriesModel(Model model) {
+        model.addAttribute("countries", countryRepository.findAll());
+        return "countries/index";
     }
 
     @RequestMapping("/filteredCountries")
