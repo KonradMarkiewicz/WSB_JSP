@@ -13,7 +13,7 @@
     
 4. Dodaj w `main.css` klasę `old`, która będzie w jakiś sposób wyróżniała tekst (dowolnie - pogrubienie, inny kolor, italic, co kto woli).
 
-5. Wykorzystaj utworzoną w punkcie 4 klasę w taki sposób, by wyróżnić tytuły obrazów namalowanych przed 1900 rokiem.
+5. Wykorzystaj utworzoną w punkcie 4 klasę w taki sposób, by wyróżnić tytuły obrazów namalowanych przed 1900 rokiem. Pamiętaj o dołączeniu `main.css` do widoku `paintings/index.jsp`!
 
 6. Korzystając z `c:if` ukryj autorów obrazów powstałych po 1900 roku.
 
